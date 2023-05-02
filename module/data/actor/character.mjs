@@ -20,6 +20,9 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {object} attributes.hp.bonuses
  * @property {string} attributes.hp.bonuses.level         Bonus formula applied for each class level.
  * @property {string} attributes.hp.bonuses.overall       Bonus formula applied to total HP.
+ * @property {number} attributes.shield.value             Current shield points
+ * @property {number} attributes.shield.max               Override for maximum Shield
+ * @property {number} attributes.overshield.value         Current overshield points
  * @property {object} attributes.death
  * @property {number} attributes.death.success            Number of successful death saves.
  * @property {number} attributes.death.failure            Number of failed death saves.
@@ -27,7 +30,10 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {number} attributes.inspiration              Does this character have inspiration?
  * @property {object} details
  * @property {string} details.background                  Name of character's background.
+ * @property {string} details.foundation                  ID of character's foundation
  * @property {string} details.originalClass               ID of first class taken by character.
+ * @property {string} details.superClass                  ID of superclass taken by character.
+ * @property {string} details.archetype                   ID of archetype taken by character.
  * @property {XPData} details.xp                          Experience points gained.
  * @property {number} details.xp.value                    Total experience points earned.
  * @property {string} details.appearance                  Description of character's appearance.
